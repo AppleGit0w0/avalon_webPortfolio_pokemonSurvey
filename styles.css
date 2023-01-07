@@ -1,0 +1,158 @@
+/*Colors*/
+:root {
+    --yellow: #FFCB05;
+    --blue: #3D7DCA;
+    --navy-blue: #003a70;
+    --navy-blue-alpha: rgba(0, 58, 112, .7);
+    --white: #ffffff;
+    --grass-type: #78c850;
+    --fire-type: #f08030;
+    --water-type: #6890f0;
+}
+
+/*Defaulting*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/*Main Background*/
+body {
+   /* background-color: var(--navy-blue)*/;
+    background-image: url(https://images.unsplash.com/photo-1665042003944-bc86d2efb0bf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: Lato;
+    color: var(--white);
+    font-weight: 500;
+}
+
+/*Form Block*/
+form {
+    background-color: var(--navy-blue-alpha);
+    width: 40vw;
+    height: 100%;
+    margin: 0 auto;
+    padding: 2rem;
+    font-size: 1.2rem;
+    border-radius: .25rem;
+}
+
+/*Start of Header Formatting*/
+.page-header {
+    background-color: rgba(255, 255, 255, .3);
+    width: 40vw;
+    height: 100%;
+    margin: 1rem auto;
+    padding: .2rem;
+    font-size: 1.2rem;
+    border-radius: .25rem;
+}
+
+.page-header>h1,
+.page-header>p {
+    text-align: center;
+    color: black;
+} 
+.page-header>h1 {
+    font-size: 2rem;
+    margin: 1.5rem auto;
+}
+
+.page-header>p {
+    font-size: 1.5rem;
+    margin: 1.5rem auto 1.5rem;
+}
+
+.pokemon-logo {
+    margin: -2rem auto -2.3rem;
+}
+/*End of Header Formatting*/
+
+fieldset {
+    border: none;
+    border-bottom: 1px solid var(--white);
+}
+
+label {
+    display: block;
+    margin: 1rem 0 1rem;
+}
+
+span {
+    font-size: .9rem;
+    weight: 500;
+}
+
+input,
+select,
+textarea {
+    display: block;
+    width: 100%;
+    margin: .5rem auto 1.2rem;
+    padding: .3rem;
+    border-radius: .25rem;
+    border: 2px solid var(--navy-blue);
+    font-family: Lato;
+    font-size: 1rem;
+    vertical-align: center;
+}
+
+select {
+    color: var(--white);
+}
+
+textarea {
+    resize: vertical;
+}
+
+.inline {
+    display: inline;
+    width: unset;
+    margin: unset;
+    font-weight: unset;
+}
+
+input[type="submit"] {
+    font-size: 1.2rem;
+    padding: 1.0rem;
+    margin: 1.2rem 0 1.2rem;
+    background-color: var(--yellow);
+    border: 1px solid var(--blue);
+    color: var(--white);
+}
+
+/*Dropdown Effects*/
+
+.select-grass select:after,
+.select-fire select:after,
+.select-water select:after {
+    position: absolute;
+    content: "";
+    border: 6px solid transparent;
+    
+}
+
+.select-grass select {
+    background-color: var(--grass-type);
+}
+.select-fire select {
+    background-color: var(--fire-type);
+}
+.select-water select {
+    background-color: var(--water-type);
+}
+
+option {
+    padding: 1rem;
+}
+
+.photo-credits {
+    margin: 1rem auto;
+    width: 40vw;
+    height: 100%;
+}

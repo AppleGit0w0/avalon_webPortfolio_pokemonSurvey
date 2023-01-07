@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Pokemon Survey Form</title>
+  </head>
+  <body>
+    <div class="page-header">
+      <h1 id="title">
+        <div>Your Favorite Starter</div>
+        <div class="pokemon-logo"><img src="https://logos-world.net/wp-content/uploads/2020/05/Pokemon-Logo.png" alt="pokemon-logo" style="width:auto;height:10rem"></div>
+        <div>Survey Form</div>
+      </h1>
+      <p id="desciption"><i>Root for your all-time favorite starter Pokémon!</i></p>
+    </div>
+    
+    <form id="survey-form">
+        <!--Start of Personal Information Field Set-->
+        <fieldset>
+            <label id="name-label" for="name">
+              Trainer Name:
+              <input id="name" name="name" type="text" placeholder="Enter your trainer name" required />
+            </label>
+            <label id="email-label" for="email">
+              Email<span> (optional)</span>:
+              <input id="email" name="email" type="email" placeholder="Enter your email" />
+            </label>
+            <label id="number-label" for="number">
+              Age:
+              <input id="number" name="number" type="number" min="1" max="120" placeholder="Age" required />
+            </label>
+        </fieldset>
+        <!--End of Personal Information Field Set-->
+
+        <!--Start of Other Questions Field Set-->
+        <fieldset>
+          <div>
+            <label>
+              When did you start playing Pokémon?
+              <input id="year-started" class="year-started" type="month" min="1996-01" max="2023-12" required />
+              </select>
+            </label>
+          </div>
+
+          <div>
+            <p>What get you into Pokémon? <span> (Select all that applies)</span></p>
+            <label for>
+              <input value="anime" type="checkbox" class="inline" />
+              Anime
+            </label>
+            <label>
+              <input value="games" type="checkbox"  class="inline" />
+              Games
+            </label>
+            <label>
+              <input value="friends" type="checkbox"  class="inline" />
+              Friends
+            </label>
+            <label for="specify">
+              <input value="others" type="checkbox"  class="inline" />
+              Others: <textarea id="specify" name="specify" rows="2" cols="30"placeholder="Please specify..."></textarea>
+            </label>
+          </div>
+
+          <div>
+            <p>Would you refer Pokémon to a friend?</p>
+            <label>
+              <input value="definitely" name="recommendation" type="radio"  class="inline" />
+              Definitely!
+            </label>
+            <label>
+              <input value="nope" name="recommendation" type="radio"  class="inline" />
+              Nope
+            </label>
+            <label>
+              <input value="undecided" name="recommendation" type="radio"  class="inline" />
+              Undecided
+            </label>
+          </div>
+        </fieldset>
+        <!--End of Other Questions Field Set-->
+
+        <!--Start of Favorite Starter Survey Field Set-->
+        <fieldset>
+          <label class="select-grass">Who's your favorite grass-type starter?
+            <select id="dropdown" required>
+              <option disabled selected value>I choose!</option>
+              <option value="Bulbasaur">Gen 01: Bulbasaur</option>
+              <option value="Chikorita">Gen 02: Chikorita</option>
+              <option value="Treecko">Gen 03: Treecko</option>
+              <option value="Turtwig">Gen 04: Turtwig</option>
+              <option value="Snivy">Gen 05: Snivy</option>
+              <option value="Chespin">Gen 06: Chespin</option>
+              <option value="Rowlet">Gen 07: Rowlet</option>
+              <option value="Grookey">Gen 08: Grookey</option>
+            </select>
+          </label>
+
+          <label class="select-fire">Who's your favorite fire-type starter?
+            <select id="dropdown" required>
+              <option disabled selected value>I choose!</option>
+              <option value="Charmander">Gen 01: Charmander</option>
+              <option value="Cyndaquil">Gen 02: Cyndaquil</option>
+              <option value="Torchic">Gen 03: Torchic</option>
+              <option value="Chimchar">Gen 04: Chimchar</option>
+              <option value="Tepig">Gen 05: Tepig</option>
+              <option value="Fennekin">Gen 06: Fennekin</option>
+              <option value="Litten">Gen 07: Litten</option>
+              <option value="Sobble">Gen 08: Sobble</option>
+            </select>
+          </label>
+
+          <label class="select-water">Who's your favorite water-type starter?
+            <select id="dropdown" required>
+              <option disabled selected value>I choose!</option>
+              <option value="Squirtle">Gen 01: Squirtle</option>
+              <option value="Totodile">Gen 02: Totodile</option>
+              <option value="Mudkip">Gen 03: Mudkip</option>
+              <option value="Piplup">Gen 04: Piplup</option>
+              <option value="Oshawott">Gen 05: Oshawott</option>
+              <option value="Froakie">Gen 06: Froakie</option>
+              <option value="Poplio">Gen 07: Poplio</option>
+              <option value="Scorbunny">Gen 08: Scorbunny</option>
+            </select>
+          </label>
+          <lable>
+            Explain your choices or simply leave a comment:
+            <textarea id="comment" name="comment" rows="3" cols="30" placeholder="Leave a comment..."></textarea>
+          </lable>
+        </fieldset>
+        <!--End of Favorite Starter Survey Field Set-->
+        <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+  <footer>
+    <p class="photo-credits"><span>Credits to Branden Skeli @ Unsplash.com for the background image.</span></p>
+  </footer>
+</html>
