@@ -26,30 +26,19 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    font-family: Lato;
+    font-family: 'Lato', sans-serif;
     color: var(--white);
     font-weight: 500;
 }
+/*Main Background*/
 
-/*Form Block*/
-form {
-    background-color: var(--navy-blue-alpha);
-    width: 40vw;
-    height: 100%;
-    margin: 0 auto;
-    padding: 2rem;
-    font-size: 1.2rem;
-    border-radius: .25rem;
-}
-
-/*Start of Header Formatting*/
+/*Page Header*/
 .page-header {
     background-color: rgba(255, 255, 255, .3);
     width: 40vw;
     height: 100%;
     margin: 1rem auto;
     padding: .2rem;
-    font-size: 1.2rem;
     border-radius: .25rem;
 }
 
@@ -58,6 +47,7 @@ form {
     text-align: center;
     color: black;
 } 
+
 .page-header>h1 {
     font-size: 2rem;
     margin: 1.5rem auto;
@@ -71,7 +61,52 @@ form {
 .pokemon-logo {
     margin: -2rem auto -2.3rem;
 }
-/*End of Header Formatting*/
+
+.pokemon-logo img {
+    height: 12rem;
+    margin: 0 auto -.5rem auto;
+}
+
+@media (max-width: 850px) {
+    .page-header {
+        min-width: 80vw;
+        height: 50%;
+    }
+    .page-header>h1 {
+        font-size: 1.5rem;
+        margin: 1.5rem auto;
+    }
+    .page-header>p {
+        font-size: 1.2rem;
+        margin: 1.5rem auto 1.5rem;
+    }
+    .pokemon-logo {
+        margin: -2rem auto -2.3rem;
+    }
+    .pokemon-logo img {
+        height: 8rem;
+        margin: .5rem auto .5rem auto;
+    }
+}
+/*Page Header*/
+
+/*Form Block*/
+form {
+    background-color: var(--navy-blue-alpha);
+    width: 40vw;
+    height: 100%;
+    margin: 0 auto;
+    padding: 2rem;
+    font-size: 1.2rem;
+    border-radius: .25rem;
+}
+
+@media (max-width: 850px) {
+    form {
+        min-width: 80vw;
+        font-size: 1.0rem;
+    }
+}
 
 fieldset {
     border: none;
@@ -125,9 +160,9 @@ input[type="submit"] {
     border: 1px solid var(--blue);
     color: var(--white);
 }
+/*Form Block*/
 
 /*Dropdown Effects*/
-
 .select-grass select:after,
 .select-fire select:after,
 .select-water select:after {
@@ -150,9 +185,19 @@ input[type="submit"] {
 option {
     padding: 1rem;
 }
+/*Dropdown Effects*/
 
+/* Footer */
 .photo-credits {
     margin: 1rem auto;
     width: 40vw;
     height: 100%;
 }
+
+@media (max-width: 850px) {
+    .photo-credits {
+        min-width: 80vw;
+    }
+}
+
+/* Footer */
